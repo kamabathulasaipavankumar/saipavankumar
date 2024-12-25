@@ -200,14 +200,15 @@ h4 {
     height: 100%;
     border-radius: 50%;
     opacity: 0;
-    animation: rotateCoin 8s linear infinite, fadeImages 8s linear infinite;
-}
+    animation: rotateCoin 12s linear infinite, fadeImages 12s linear infinite;}
 
 /* Set delays so images appear one after the other */
 .rotating-image:nth-child(1) { animation-delay: 0s, 0s; }
 .rotating-image:nth-child(2) { animation-delay: 2s, 2s; }
 .rotating-image:nth-child(3) { animation-delay: 4s, 4s; }
 .rotating-image:nth-child(4) { animation-delay: 6s, 6s; }
+.rotating-image:nth-child(5) { animation-delay: 8s, 8s; }
+.rotating-image:nth-child(6) { animation-delay: 10s, 10s; }
 
 @keyframes rotateCoin {
     0% {
@@ -543,6 +544,22 @@ h4 {
     border-radius: 12px;
     animation: progress 3s ease-out forwards 2s;
 }
+.nextjs {
+    width: 0%;
+    height: .5rem;
+    background-color: #af9c0b;
+    margin: 1rem 0;
+    border-radius: 12px;
+    animation: progress 3s ease-out forwards 2s;
+}
+.mongodb {
+    width: 0%;
+    height: .5rem;
+    background-color: #1bd828;
+    margin: 1rem 0;
+    border-radius: 12px;
+    animation: progress 3s ease-out forwards 2s;
+}
 
 .bar {
     margin: 2rem 0;
@@ -596,6 +613,13 @@ h4 {
 .reactjs {
     --width: 80%;
 }
+.nextjs {
+    --width: 70%;
+}
+.mongodb {
+    --width: 60%;
+}
+
 
 /* Keyframe animation to animate the progress bar width and reset */
 @keyframes progress {
@@ -635,7 +659,14 @@ h4 {
     animation: progress 8.5s ease-out infinite 2s;
     --width: 80%;
 }
-
+.nextjs {
+    animation: progress 8.5s ease-out infinite 2.5s;
+    --width: 70%;
+}
+.mongodb {
+    animation: progress 8.5s ease-out infinite 3s;
+    --width: 60%;
+}
 
 
 
